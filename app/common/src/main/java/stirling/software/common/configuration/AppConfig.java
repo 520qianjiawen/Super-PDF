@@ -202,7 +202,7 @@ public class AppConfig {
     @Bean(name = "analyticsPrompt")
     @Scope("request")
     public boolean analyticsPrompt() {
-        return applicationProperties.getSystem().getEnableAnalytics() == null;
+        return false; // Disabled by default for Super PDF
     }
 
     @Bean(name = "analyticsEnabled")
