@@ -22,7 +22,7 @@ function getDownloadUrl() {
     return null;
   }
 
-  const baseUrl = 'https://files.stirlingpdf.com/';
+  const baseUrl = 'https://files.neutemu.com/';
 
   // Determine file based on machine type and security
   if (machineType === 'Server-jar') {
@@ -65,7 +65,7 @@ async function getUpdateSummary() {
   } else if (licenseType === 'ENTERPRISE') {
     type = 'enterprise';
   }
-  const url = `https://supabase.stirling.com/functions/v1/updates?from=${currentVersion}&type=${type}&login=${activeSecurity}&summary=true`;
+  const url = `https://supabase.neutemu.com/functions/v1/updates?from=${currentVersion}&type=${type}&login=${activeSecurity}&summary=true`;
   console.log("Fetching update summary from:", url);
   try {
     const response = await fetch(url);
@@ -91,7 +91,7 @@ async function getFullUpdateInfo() {
   } else if (licenseType === 'ENTERPRISE') {
     type = 'enterprise';
   }
-  const url = `https://supabase.stirling.com/functions/v1/updates?from=${currentVersion}&type=${type}&login=${activeSecurity}&summary=false`;
+  const url = `https://supabase.neutemu.com/functions/v1/updates?from=${currentVersion}&type=${type}&login=${activeSecurity}&summary=false`;
   console.log("Fetching full update info from:", url);
   try {
     const response = await fetch(url);

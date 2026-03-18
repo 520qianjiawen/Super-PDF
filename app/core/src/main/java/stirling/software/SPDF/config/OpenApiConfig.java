@@ -43,12 +43,12 @@ public class OpenApiConfig {
                                         .url(
                                                 "https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/refs/heads/main/LICENSE")
                                         .identifier("MIT"))
-                        .termsOfService("https://www.stirlingpdf.com/terms")
+                        .termsOfService("https://pdf.neutemu.com/terms")
                         .contact(
                                 new Contact()
                                         .name("Super Software")
-                                        .url("https://www.stirlingpdf.com")
-                                        .email("contact@stirlingpdf.com"))
+                                        .url("https://pdf.neutemu.com")
+                                        .email("contact@neutemu.com"))
                         .description(DEFAULT_DESCRIPTION);
         if (!applicationProperties.getSecurity().getEnableLogin()) {
             return new OpenAPI().components(new Components()).info(info);
