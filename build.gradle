@@ -44,7 +44,7 @@ ext.isSecurityDisabled = { ->
 jar {
     enabled = false
     manifest {
-        attributes "Implementation-Title": "Stirling-PDF",
+        attributes "Implementation-Title": "Super-PDF",
             "Implementation-Version": project.version
     }
 }
@@ -252,10 +252,10 @@ jpackage {
     input = layout.projectDirectory.dir("app/core/build/libs")
     destination = layout.projectDirectory.dir("build/jpackage")
     mainJar = "Stirling-PDF-${project.version}.jar"
-    appName = "Stirling PDF"
+    appName = "Super PDF"
     appVersion = project.version
-    vendor = "Stirling PDF Inc"
-    appDescription = "Stirling PDF - Your Local PDF Editor"
+    vendor = "Super PDF Inc"
+    appDescription = "Super PDF - Your Local PDF Editor"
     icon = layout.projectDirectory.file("app/core/src/main/resources/static/favicon.ico")
     verbose = true
 //    mainClass = "org.springframework.boot.loader.launch.JarLauncher"
@@ -287,7 +287,7 @@ jpackage {
         winShortcutPrompt = true  // Lets user choose whether to create shortcuts
         winDirChooser = true  // Allows users to choose installation directory
         winPerUserInstall = false
-        winMenuGroup = "Stirling PDF"
+        winMenuGroup = "Super PDF"
         winUpgradeUuid = "2a43ed0c-b8c2-40cf-89e1-751129b87641" // Unique identifier for updates
         winHelpUrl = "https://github.com/Stirling-Tools/Stirling-PDF"
         winUpdateUrl = "https://github.com/Stirling-Tools/Stirling-PDF/releases"
@@ -300,8 +300,8 @@ jpackage {
         appVersion = getMacVersion(project.version.toString())
         icon = layout.projectDirectory.file("app/core/src/main/resources/static/favicon.icns")
         type = ImageType.DMG
-        macPackageIdentifier = "Stirling PDF"
-        macPackageName = "Stirling PDF"
+        macPackageIdentifier = "Super PDF"
+        macPackageName = "Super PDF"
         macAppCategory = "public.app-category.productivity"
         macSign = false // Enable signing
         macAppStore = false // Not targeting App Store initially
@@ -356,7 +356,7 @@ jpackage {
     ]*/
 
     // Add copyright and license information
-    copyright = "Copyright © 2025 Stirling PDF Inc."
+    copyright = "Copyright © 2025 Super PDF Inc."
     licenseFile = layout.projectDirectory.file("LICENSE")
 }
 
@@ -391,16 +391,16 @@ tasks.register('jpackageMacX64') {
         def result = exec {
             commandLine 'jpackage',
                 '--type', 'dmg',
-                '--name', 'Stirling PDF (x86_64)',
+                '--name', 'Super PDF (x86_64)',
                 '--input', 'app/core/build/libs',
-                '--main-jar', "Stirling-PDF-${project.version}.jar",
+                '--main-jar', "Super-PDF-${project.version}.jar",
                 '--main-class', 'org.springframework.boot.loader.launch.JarLauncher',
                 '--runtime-image', file(jrePath + "/zulu-17.jre/Contents/Home"),
                 '--dest', 'build/jpackage/x86_64',
                 '--icon', 'app/core/src/main/resources/static/favicon.icns',
                 '--app-version', getMacVersion(project.version.toString()),
-                '--mac-package-name', 'Stirling PDF (x86_64)',
-                '--mac-package-identifier', 'Stirling PDF (x86_64)',
+                '--mac-package-name', 'Super PDF (x86_64)',
+                '--mac-package-identifier', 'Super PDF (x86_64)',
                 '--mac-app-category', 'public.app-category.productivity',
 
                 // Java options
@@ -485,7 +485,7 @@ tasks.register('cleanTempJre') {
 launch4j {
     icon = "${projectDir}/app/core/src/main/resources/static/favicon.ico"
 
-    outfile="Stirling-PDF.exe"
+    outfile="Super-PDF.exe"
 
     if(System.getenv("STIRLING_PDF_DESKTOP_UI") == 'true') {
         headerType = "gui"
@@ -505,14 +505,14 @@ launch4j {
 
     jreMinVersion="17"
 
-    mutexName="Stirling-PDF"
-    windowTitle="Stirling-PDF"
+    mutexName="Super-PDF"
+    windowTitle="Super-PDF"
 
-    messagesStartupError="An error occurred while starting Stirling-PDF"
+    messagesStartupError="An error occurred while starting Super-PDF"
     // messagesJreNotFoundError="This application requires a Java Runtime Environment, Please download Java 17."
     messagesJreVersionError="You are running the wrong version of Java, Please download Java 21."
     messagesLauncherError="Java is corrupted. Please uninstall and then install  Java 21."
-    messagesInstanceAlreadyExists="Stirling-PDF is already running."
+    messagesInstanceAlreadyExists="Super-PDF is already running."
 }
 
 spotless {
@@ -532,7 +532,7 @@ spotless {
 
 sonar {
     properties {
-        property "sonar.projectKey", "Stirling-Tools_Stirling-PDF"
+        property "sonar.projectKey", "Stirling-Tools_Super-PDF"
         property "sonar.organization", "stirling-tools"
 
         property "sonar.exclusions", "**/build-wrapper-dump.json, **/src/main/java/org/apache/**, **/src/main/resources/static/pdfjs/**, **/src/main/resources/static/pdfjs-legacy/**, **/src/main/resources/static/js/thirdParty/**"
@@ -543,7 +543,7 @@ sonar {
 
 swaggerhubUpload {
     // dependsOn = generateOpenApiDocs  // Depends on your task generating Swagger docs
-    api = "Stirling-PDF"  // The name of your API on SwaggerHub
+    api = "Super-PDF"  // The name of your API on SwaggerHub
     owner = "${System.getenv().getOrDefault('SWAGGERHUB_USER', 'Frooodle')}"  // Your SwaggerHub username (or organization name)
     version = project.version  // The version of your API
     inputFile = file("SwaggerDoc.json")  // The path to your Swagger docs

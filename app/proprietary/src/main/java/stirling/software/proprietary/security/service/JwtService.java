@@ -43,7 +43,7 @@ import stirling.software.proprietary.security.saml2.CustomSaml2AuthenticatedPrin
 public class JwtService implements JwtServiceInterface {
 
     private static final String JWT_COOKIE_NAME = "stirling_jwt";
-    private static final String ISSUER = "Stirling PDF";
+    private static final String ISSUER = "Super PDF";
     private static final long EXPIRATION = 3600000;
 
     @Value("${stirling.security.jwt.secureCookie:true}")

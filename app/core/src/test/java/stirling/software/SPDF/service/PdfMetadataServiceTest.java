@@ -31,7 +31,7 @@ class PdfMetadataServiceTest {
     @Mock private ApplicationProperties applicationProperties;
     @Mock private UserServiceInterface userService;
     private PdfMetadataService pdfMetadataService;
-    private final String STIRLING_PDF_LABEL = "Stirling PDF";
+    private final String STIRLING_PDF_LABEL = "Super PDF";
 
     @BeforeEach
     void setUp() {

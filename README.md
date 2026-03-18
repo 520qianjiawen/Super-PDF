@@ -1,15 +1,15 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/docs/stirling.png" width="80"></p>
-<h1 align="center">Stirling-PDF</h1>
+<p align="center"><img src="https://raw.githubusercontent.com/Stirling-Tools/Super-PDF/main/docs/stirling.png" width="80"></p>
+<h1 align="center">Super-PDF</h1>
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/frooodle/s-pdf)](https://hub.docker.com/r/frooodle/s-pdf)
 [![Discord](https://img.shields.io/discord/1068636748814483718?label=Discord)](https://discord.gg/HYmhKj45pU)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Stirling-Tools/Stirling-PDF/badge)](https://scorecard.dev/viewer/?uri=github.com/Stirling-Tools/Stirling-PDF)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Stirling-Tools/Super-PDF/badge)](https://scorecard.dev/viewer/?uri=github.com/Stirling-Tools/Super-PDF)
 [![GitHub Repo stars](https://img.shields.io/github/stars/stirling-tools/stirling-pdf?style=social)](https://github.com/Stirling-Tools/stirling-pdf)
 
 <a href="https://www.producthunt.com/posts/stirling-pdf?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-stirling&#0045;pdf" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=641239&theme=light" alt="Stirling&#0032;PDF - Open&#0032;source&#0032;locally&#0032;hosted&#0032;web&#0032;PDF&#0032;editor | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Stirling-Tools/Stirling-PDF/tree/digitalOcean&refcode=c3210994b1af)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Stirling-Tools/Super-PDF/tree/digitalOcean&refcode=c3210994b1af)
 
-[Stirling-PDF](https://www.stirlingpdf.com) is a robust, locally hosted web-based PDF manipulation tool using Docker. It enables you to carry out various operations on PDF files, including splitting, merging, converting, reorganizing, adding images, rotating, compressing, and more. This locally hosted web application has evolved to encompass a comprehensive set of features, addressing all your PDF requirements.
+[Super-PDF](https://www.stirlingpdf.com) is a robust, locally hosted web-based PDF manipulation tool using Docker. It enables you to carry out various operations on PDF files, including splitting, merging, converting, reorganizing, adding images, rotating, compressing, and more. This locally hosted web application has evolved to encompass a comprehensive set of features, addressing all your PDF requirements.
 
 All files and PDFs exist either exclusively on the client side, reside in server memory only during task execution, or temporarily reside in a file solely for the execution of the task. Any file downloaded by the user will have been deleted from the server by that point.
 
@@ -112,7 +112,7 @@ Visit our comprehensive documentation at [docs.stirlingpdf.com](https://docs.sti
 
 ## Supported Languages
 
-Stirling-PDF currently supports 40 languages!
+Super-PDF currently supports 40 languages!
 
 | Language                                     | Progress                               |
 | -------------------------------------------- | -------------------------------------- |
@@ -158,9 +158,9 @@ Stirling-PDF currently supports 40 languages!
 | Vietnamese (Tiếng Việt) (vi_VN)              | ![57%](https://geps.dev/progress/57)   |
 | Malayalam (മലയാളം) (ml_IN)              | ![73%](https://geps.dev/progress/73)   |
 
-## Stirling PDF Enterprise
+## Super PDF Enterprise
 
-Stirling PDF offers an Enterprise edition of its software. This is the same great software but with added features, support and comforts.
+Super PDF offers an Enterprise edition of its software. This is the same great software but with added features, support and comforts.
 Check out our [Enterprise docs](https://docs.stirlingpdf.com/Pro)
 
 
@@ -170,5 +170,5 @@ Join our community:
 - [Contribution Guidelines](CONTRIBUTING.md)
 - [Translation Guide (How to add custom languages)](devGuide/HowToAddNewLanguage.md)
 - [Developer Guide](devGuide/DeveloperGuide.md)
-- [Issue Tracker](https://github.com/Stirling-Tools/Stirling-PDF/issues)
+- [Issue Tracker](https://github.com/Stirling-Tools/Super-PDF/issues)
 - [Discord Community](https://discord.gg/HYmhKj45pU)

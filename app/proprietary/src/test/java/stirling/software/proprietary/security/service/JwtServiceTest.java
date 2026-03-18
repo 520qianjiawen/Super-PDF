@@ -224,7 +224,7 @@ class JwtServiceTest {
         assertEquals("admin", extractedClaims.get("role"));
         assertEquals("IT", extractedClaims.get("department"));
         assertEquals(username, extractedClaims.get("sub"));
-        assertEquals("Stirling PDF", extractedClaims.get("iss"));
+        assertEquals("Super PDF", extractedClaims.get("iss"));
     }
 
     @Test
