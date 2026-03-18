@@ -37,8 +37,8 @@ public class LocaleConfiguration implements WebMvcConfigurer {
     public LocaleResolver localeResolver() {
         SessionLocaleResolver slr = new SessionLocaleResolver();
         String appLocaleEnv = applicationProperties.getSystem().getDefaultLocale();
-        Locale defaultLocale = // Fallback to UK locale if environment variable is not set
-                Locale.UK;
+        Locale defaultLocale = // Fallback to Chinese locale if environment variable is not set
+                Locale.SIMPLIFIED_CHINESE;
         if (appLocaleEnv != null && !appLocaleEnv.isEmpty()) {
             Locale tempLocale = Locale.forLanguageTag(appLocaleEnv);
             String tempLanguageTag = tempLocale.toLanguageTag();
