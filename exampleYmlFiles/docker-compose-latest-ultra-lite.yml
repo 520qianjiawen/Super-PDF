@@ -18,7 +18,7 @@ services:
       - ./stirling/latest/logs:/logs:rw
     environment:
       SECURITY_ENABLELOGIN: "false"
-      SYSTEM_DEFAULTLOCALE: en-US
+      SYSTEM_DEFAULTLOCALE: zh-CN
       UI_APPNAME: Stirling-PDF-Ultra-lite
       UI_HOMEDESCRIPTION: Demo site for Stirling-PDF-Ultra-lite Latest
       UI_APPNAMENAVBAR: Stirling-PDF-Ultra-lite Latest

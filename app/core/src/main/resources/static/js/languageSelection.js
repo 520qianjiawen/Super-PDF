@@ -1,6 +1,12 @@
 function getStoredOrDefaultLocale() {
+  const currentURL = new URL(window.location.href);
+  const urlLang = currentURL.searchParams.get('lang');
+  if (urlLang) {
+    localStorage.setItem('languageCode', urlLang);
+    return urlLang;
+  }
   const storedLocale = localStorage.getItem('languageCode');
-  return storedLocale || getDetailedLanguageCode();
+  return storedLocale || 'zh_CN';
 }
 
 function setLanguageForDropdown(dropdownClass) {
@@ -32,11 +38,11 @@ function handleDropdownItemClick(event) {
 }
 
 function checkUserLanguage(defaultLocale) {
-  if (
-    !localStorage.getItem('languageCode') ||
-    document.documentElement.getAttribute('data-language') != defaultLocale
-  ) {
+  const currentLanguage = document.documentElement.getAttribute('data-language');
+  if (!localStorage.getItem('languageCode')) {
     localStorage.setItem('languageCode', defaultLocale);
+  }
+  if (currentLanguage && currentLanguage !== defaultLocale) {
     updateUrlWithLanguage(defaultLocale);
   }
 }

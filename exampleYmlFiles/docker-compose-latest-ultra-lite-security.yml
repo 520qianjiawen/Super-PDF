@@ -20,7 +20,7 @@ services:
     environment:
       DISABLE_ADDITIONAL_FEATURES: "false"
       SECURITY_ENABLELOGIN: "true"
-      SYSTEM_DEFAULTLOCALE: en-US
+      SYSTEM_DEFAULTLOCALE: zh-CN
       UI_APPNAME: Stirling-PDF-Lite
       UI_HOMEDESCRIPTION: Demo site for Stirling-PDF-Lite Latest with Security
       UI_APPNAMENAVBAR: Stirling-PDF-Lite Latest

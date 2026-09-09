@@ -51,7 +51,7 @@ public class LocaleConfiguration implements WebMvcConfigurer {
                     defaultLocale = tempLocale;
                 } else {
                     System.err.println(
-                            "Invalid SYSTEM_DEFAULTLOCALE environment variable value. Falling back to default en-GB.");
+                            "Invalid SYSTEM_DEFAULTLOCALE environment variable value. Falling back to default zh-CN.");
                 }
             }
         }

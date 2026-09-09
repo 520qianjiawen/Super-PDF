@@ -25,7 +25,7 @@ services:
       PUID: 1002
       PGID: 1002
       UMASK: "022"
-      SYSTEM_DEFAULTLOCALE: en-US
+      SYSTEM_DEFAULTLOCALE: zh-CN
       UI_APPNAME: Stirling-PDF
       UI_HOMEDESCRIPTION: Demo site for Stirling-PDF Latest-fat with  all Endpoints Disabled
       UI_APPNAMENAVBAR: Stirling-PDF Latest-fat

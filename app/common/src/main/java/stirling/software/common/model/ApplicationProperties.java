@@ -313,7 +313,7 @@ public class ApplicationProperties {
 
     @Data
     public static class System {
-        private String defaultLocale;
+        private String defaultLocale = "zh-CN";
         private Boolean googlevisibility;
         private boolean showUpdate;
         private Boolean showUpdateOnlyAdmin;
