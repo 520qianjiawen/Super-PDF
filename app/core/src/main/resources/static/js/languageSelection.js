@@ -6,7 +6,7 @@ function getStoredOrDefaultLocale() {
     return urlLang;
   }
   const storedLocale = localStorage.getItem('languageCode');
-  return storedLocale || 'zh_CN';
+  return storedLocale || (typeof getDetailedLanguageCode === 'function' ? getDetailedLanguageCode() : 'zh_CN');
 }
 
 function setLanguageForDropdown(dropdownClass) {
